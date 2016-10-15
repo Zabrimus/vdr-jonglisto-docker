@@ -1,5 +1,5 @@
 {
-  "channelImagePath": "/dist/logos",
+  "channelImagePath": "/dist/logos/",
   
   "useRecordingSyncMap" : "false",
   "areYouSureToUseSyncMap" : "false",
