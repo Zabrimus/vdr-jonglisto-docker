@@ -2,7 +2,6 @@
   "channelImagePath": "/dist/logos/",
   
   "useRecordingSyncMap" : "false",
-  "areYouSureToUseSyncMap" : "false",
 
   "epg2vdr": {
     "url": "jdbc:mysql://homeserver:3307/epg2vdr",
