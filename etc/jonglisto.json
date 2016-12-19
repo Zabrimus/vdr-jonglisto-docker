@@ -2,6 +2,10 @@
   "useRecordingSyncMap" : "false",
 
   "developer_mode": "false",
+
+  "svdrpPort": "5000",
+  "remoteOsdSleepTime": "200",
+  "remoteOsdIncSleepTime": "200",
   
   "epg2vdr": {
     "url": "jdbc:mysql://homeserver:3307/epg2vdr",
@@ -93,6 +97,12 @@
       "timers" : "stream2",
       "recordings" : [ "stream2", "pivdr2" ]
     }
-  ]  
+  ],  
+  
+  "NashornScripts": {  
+       "svdrp": "/etc/jonglisto/svdrp.js",
+       "epg2vdr": "/etc/jonglisto/epg2vdr.js"
+  } 
+  
 }
 		
