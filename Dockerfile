@@ -2,7 +2,7 @@ FROM openjdk:alpine
 
 WORKDIR /tmp
 
-ENV JONGLISTO_VERSION=0.0.2
+ENV JONGLISTO_VERSION=0.0.3
 ENV S6_OVERLAY_VERSION=v1.18.1.4
 ENV TERM=xterm
 
@@ -14,7 +14,7 @@ RUN apk update && \
     mkdir /var/cache/jonglisto-db && \
 
     curl -sSL https://github.com/just-containers/s6-overlay/releases/download/${S6_OVERLAY_VERSION}/s6-overlay-amd64.tar.gz | tar xfz - -C / && \ 
-    curl -sSL https://github.com/Zabrimus/vdr-jonglisto/releases/download/0.0.1/vdr-jonglisto-${JONGLISTO_VERSION}.war -o /dist/vdr-jonglisto-${JONGLISTO_VERSION}.war && \
+    curl -sSL https://github.com/Zabrimus/vdr-jonglisto/releases/download/${JONGLISTO_VERSION}/vdr-jonglisto-${JONGLISTO_VERSION}.war -o /dist/vdr-jonglisto-${JONGLISTO_VERSION}.war && \
 
     rm -rf /var/cache/apk/*
        

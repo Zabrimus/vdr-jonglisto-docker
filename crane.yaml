@@ -1,11 +1,11 @@
 containers:
     jonglisto:
-        image: vdr/jonglisto:0.0.2
+        image: vdr/jonglisto:0.0.3
         build:
             context: .
         run:
             hostname: jonglisto
             volume: ["./etc:/etc/jonglisto", "/var/cache/logos:/dist/logos"]
             # detach: true
-            publish: ["8080:8080"]
+            publish: ["8080:8080", "5000:5000"]
             
