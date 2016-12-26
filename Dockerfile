@@ -2,11 +2,7 @@ FROM openjdk:alpine
 
 WORKDIR /tmp
 
-<<<<<<< HEAD
 ENV JONGLISTO_VERSION=0.0.4
-=======
-ENV JONGLISTO_VERSION=0.0.3
->>>>>>> f9138505088be0e0f440b1f51fd3fea1fdedc334
 ENV S6_OVERLAY_VERSION=v1.18.1.4
 ENV TERM=xterm
 
