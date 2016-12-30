@@ -1,6 +1,6 @@
 containers:
     jonglisto:
-        image: vdr/jonglisto:0.0.4
+        image: vdr/jonglisto:0.0.5
         build:
             context: .
         run:
